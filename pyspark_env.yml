@@ -1,0 +1,27 @@
+name: pyspark
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python[version='>3.9']
+  - pandas
+  - pyspark[version='>3.5']
+  - tqdm
+  - pytz
+  - numpy
+  - altair
+  - nltk
+  - scikit-learn=1.4.0
+  - scipy
+  - praw
+  - seaborn
+  - jupyter
+  - pyarrow
+  - ffmpeg
+  - pycaret=3.3.2
+  - wkhtmltopdf
+  - pandoc
+  - pip
+  - pip:
+      - pandoc
+      - hdbscan

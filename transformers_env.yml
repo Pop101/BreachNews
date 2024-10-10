@@ -1,0 +1,36 @@
+name: transformers
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - tqdm
+  - jupyter
+  - matplotlib
+  - seaborn
+  - numpy
+  - pandas
+  - pillow
+  - scikit-learn
+  - pytorch
+  - pytorch-cuda
+  - cuda-cudart
+  - cuda-runtime
+  - torchvision
+  - torchaudio
+  - transformers
+  - accelerate
+  - einops
+  - langchain=0.2.3
+  - langsmith
+  - chromadb
+  - pydantic=1.10.2
+  - sentencepiece
+  - pip
+  - pip:
+      - bitsandbytes~=0.43.1
+      - flash-attn~=2.5.8 --no-build-isolation
+      - langchain_community~=0.2.3
+      - einops
+      - hdbscan
