@@ -30,6 +30,8 @@ class NewsScraper:
             return self._scrape_new_york_times(url)
         elif news_company.lower() == "cnn":
             return self._scrape_cnn(url)
+        elif news_company.lower() == "fox":
+            return self._scrape_fox(url)
         # Add more elif cases for other news companies here
         else:
             raise ValueError(f"No scraping method defined for {news_company}")
@@ -113,6 +115,46 @@ class NewsScraper:
             driver.quit()  # Close the browser when done
 
         return article_text, full_html
+    
+    def _scrape_fox(self, url):
+        """
+        Private method to scrape the Fox article given its URL.
+
+        Args:
+            url (str): The URL of the Fox article to scrape.
+
+        Returns:
+            tuple: A tuple containing:
+                - str: The cleaned text extracted from the article.
+                - str: The full HTML content of the article.
+        """
+        driver = webdriver.Chrome(options=self.chrome_options)
+        article_text = ""
+        full_html = ""
+        try:
+            driver.get(url)
+            wait = WebDriverWait(driver, 10)
+
+            full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "article-wrap")))
+
+            elements = full_html.find_elements(
+                By.XPATH, ".//p"
+            )
+
+            full_html = full_html.get_attribute('outerHTML')
+
+            article_html = ""
+            for element in elements:
+                article_html += element.get_attribute('outerHTML')
+
+            article_text = self.remove_html_tags(article_html)
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+        finally:
+            driver.quit()  # Close the browser when done
+
+        return article_text, full_html
 
     @staticmethod
     def remove_html_tags(html):
@@ -129,7 +171,12 @@ class NewsScraper:
 # article_text, full_html = scraper.scrape(url, "New York Times")
 # print(article_text)
 
-scraper = NewsScraper()
-url = "http://money.cnn.com/2007/01/03/autos/new_chrysler_minivans/index.htm?cnn=yes"
-article_text, full_html = scraper.scrape(url, "CNN")
-print(article_text)
+# scraper = NewsScraper()
+# url = "http://money.cnn.com/2007/01/03/autos/new_chrysler_minivans/index.htm?cnn=yes"
+# article_text, full_html = scraper.scrape(url, "CNN")
+# print(article_text)
+
+# scraper = NewsScraper()
+# url = "https://www.foxnews.com/us/pregnant-woman-shot-in-the-head-while-driving-on-detroit-freeway"
+# article_text, full_html = scraper.scrape(url, "Fox")
+# print(article_text)
