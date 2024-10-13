@@ -36,6 +36,8 @@ class NewsScraper:
             return self._scrape_washington_post(url)
         elif news_company.lower() == "daily mail":
             return self._scrape_daily_mail(url)
+        elif news_company.lower() == "cnbc":
+            return self._scrape_cnbc(url)
         # Add more elif cases for other news companies here
         else:
             raise ValueError(f"No scraping method defined for {news_company}")
@@ -238,6 +240,46 @@ class NewsScraper:
             driver.quit()  # Close the browser when done
 
         return article_text, full_html
+    
+    def _scrape_cnbc(self, url):
+        """
+        Private method to scrape the CNBC article given its URL.
+
+        Args:
+            url (str): The URL of the CNBC article to scrape.
+
+        Returns:
+            tuple: A tuple containing:
+                - str: The cleaned text extracted from the article.
+                - str: The full HTML content of the article.
+        """
+        driver = webdriver.Chrome(options=self.chrome_options)
+        article_text = ""
+        full_html = ""
+        try:
+            driver.get(url)
+            wait = WebDriverWait(driver, 10)
+
+            full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "PageBuilder-pageWrapper"))).get_attribute('outerHTML')
+
+            article_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "ArticleBody-articleBody")))
+
+            elements = article_html.find_elements(
+                By.XPATH, ".//p"
+            )
+
+            p_elements = ""
+            for element in elements:
+                p_elements += element.get_attribute('outerHTML')
+
+            article_text = self.remove_html_tags(p_elements)
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+        finally:
+            driver.quit()  # Close the browser when done
+
+        return article_text, full_html
 
     @staticmethod
     def remove_html_tags(html):
@@ -272,4 +314,9 @@ class NewsScraper:
 # scraper = NewsScraper()
 # url = "http://www.dailymail.co.uk/tvshowbiz/article-1308560/Katy-Perry-displays-unfortunate-underwear-choice-sheer-skirt.html"
 # article_text, full_html = scraper.scrape(url, "Daily Mail")
+# print(article_text)
+
+# scraper = NewsScraper()
+# url = "http://www.cnbc.com/id/16383511"
+# article_text, full_html = scraper.scrape(url, "CNBC")
 # print(article_text)
