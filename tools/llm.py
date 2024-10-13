@@ -1,7 +1,7 @@
 import os
 import warnings
 
-def embedding_pipeline(model_name='nomic-ai/nomic-embed-text-v1.5', tokenizer_name='bert-base-uncased', **kwargs):
+def embedding_pipeline(model_name='nomic-ai/nomic-embed-text-v1.5', tokenizer_name='bert-base-uncased', use_gpu=True, **kwargs):
     from transformers import AutoTokenizer, AutoModel, Pipeline
     import torch
     import torch.nn.functional as F
@@ -13,15 +13,16 @@ def embedding_pipeline(model_name='nomic-ai/nomic-embed-text-v1.5', tokenizer_na
             model = AutoModel.from_pretrained(model_name, trust_remote_code=True, safe_serialization=True, rotary_scaling_factor=2)
             
             # Load to GPU if available
-            device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-            model.to(device)
+            if use_gpu:
+                device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+                model.to(device)
             model.eval()
             
             # Initialize pipeline
             super().__init__(
                 model     = model,
                 tokenizer = tokenizer,
-                device    = 0 if torch.cuda.is_available() else -1,
+                device    = 0 if torch.cuda.is_available() and use_gpu else -1,
                 **kwargs
             )
 
