@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException
 from bs4 import BeautifulSoup
 
 class NewsScraper:
@@ -42,6 +43,8 @@ class NewsScraper:
             return self._scrape_the_guardian(url)
         elif news_company.lower() == "new york post":
             return self._scrape_new_york_post(url)
+        elif news_company.lower() == "bbc":
+            return self._scrape_bbc(url)
         # Add more elif cases for other news companies here
         else:
             raise ValueError(f"No scraping method defined for {news_company}")
@@ -364,6 +367,56 @@ class NewsScraper:
 
         return article_text, full_html
     
+    def _scrape_bbc(self, url):
+        """
+        Private method to scrape the BBC article given its URL.
+
+        Args:
+            url (str): The URL of the BBC article to scrape.
+
+        Returns:
+            tuple: A tuple containing:
+                - str: The cleaned text extracted from the article.
+                - str: The full HTML content of the article.
+        """
+        driver = webdriver.Chrome(options=self.chrome_options)
+        article_text = ""
+        full_html = ""
+        try:
+            driver.get(url)
+            wait = WebDriverWait(driver, 10)
+
+            # Wait for the article wrapper to load
+            full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "ssrcss-15tkd6i-ArticleWrapper")))
+
+            # Find the elements by their data-component attributes
+            elements = None
+            try:
+                # Try locating elements using the XPATH selector for 'text-block' and 'subheadline-block'
+                elements = driver.find_elements(By.XPATH, "//*[@data-component='text-block' or @data-component='subheadline-block']")
+
+            except StaleElementReferenceException:
+                print("Encountered a stale element. Re-fetching the elements...")
+
+                # If stale element exception occurs, wait for the element again and retry finding elements
+                full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "ssrcss-15tkd6i-ArticleWrapper")))
+                elements = driver.find_elements(By.XPATH, "//*[@data-component='text-block' or @data-component='subheadline-block']")
+
+            # Concatenate the text from the found elements
+            article_html = ""
+            for element in elements:
+                article_html += element.get_attribute('outerHTML')
+
+            article_text = self.remove_html_tags(article_html)
+            full_html = full_html.get_attribute('outerHTML')
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+        finally:
+            driver.quit()  # Close the browser when done
+
+        return article_text, full_html
+    
     
 
     @staticmethod
@@ -415,3 +468,8 @@ class NewsScraper:
 # url = "https://nypost.com/2009/09/25/kirsten-dunce/"
 # article_text, full_html = scraper.scrape(url, "New York Post")
 # print(article_text)
+
+scraper = NewsScraper()
+url = "http://www.bbc.co.uk/news/business-12918761"
+article_text, full_html = scraper.scrape(url, "BBC")
+print(article_text)
