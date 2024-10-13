@@ -1,0 +1,10 @@
+Given a news article's headline, determine the following information about it:
+
+If the article is about a data breach, make sure you respond with "BreachMentioned: true".
+Otherwise, respond with "BreachMentioned: false".
+
+If the headline of the article implies the main subject of the article will be a single distinct company, make sure you respond with "CompanyMentioned: <company name>", filling in the specific company name.
+If the article implies that the government will be the main subject of the article, respond with "CompanyMentioned: government"
+If the article mentions two or more companies, or the main subject is not clear, respond with "CompanyMentioned: false"
+
+Below are some examples of labelled headlines. Follow the format given exactly.

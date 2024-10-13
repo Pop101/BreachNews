@@ -1,0 +1,27 @@
+name: openai
+channels:
+  - conda-forge
+  - defaults
+  - nvidia
+  - pytorch
+dependencies:
+  - tqdm
+  - jupyter
+  - tiktoken
+  - langchain=0.2.3
+  - langsmith
+  - openai==0.28
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - chromadb
+  - pydantic=1.10.2
+  - pytorch-cuda
+  - pytorch
+  - transformers
+  - pip
+  - pip:
+      - langchain_community
+      - einops
