@@ -45,6 +45,8 @@ class NewsScraper:
             return self._scrape_new_york_post(url)
         elif news_company.lower() == "bbc":
             return self._scrape_bbc(url)
+        elif news_company.lower() == "usa today":
+            return self._scrape_usa_today(url)
         # Add more elif cases for other news companies here
         else:
             raise ValueError(f"No scraping method defined for {news_company}")
@@ -417,6 +419,45 @@ class NewsScraper:
 
         return article_text, full_html
     
+    def _scrape_usa_today(self, url):
+        """
+        Private method to scrape the USA Today article given its URL.
+
+        Args:
+            url (str): The URL of the USA Today article to scrape.
+
+        Returns:
+            tuple: A tuple containing:
+                - str: The cleaned text extracted from the article.
+                - str: The full HTML content of the article.
+        """
+        driver = webdriver.Chrome(options=self.chrome_options)
+        article_text = ""
+        full_html = ""
+        try:
+            driver.get(url)
+            wait = WebDriverWait(driver, 10)
+
+            full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "gnt_pr")))
+
+            elements = full_html.find_elements(
+                By.XPATH, ".//p"
+            )
+
+            p_elements = ""
+            for element in elements:
+                p_elements += element.get_attribute('outerHTML')
+
+            article_text = self.remove_html_tags(p_elements)
+            full_html = full_html.get_attribute('outerHTML')
+
+        except Exception as e:
+            print(f"An error occurred: {e}")
+        finally:
+            driver.quit()  # Close the browser when done
+
+        return article_text, full_html
+    
     
 
     @staticmethod
@@ -469,7 +510,12 @@ class NewsScraper:
 # article_text, full_html = scraper.scrape(url, "New York Post")
 # print(article_text)
 
-scraper = NewsScraper()
-url = "http://www.bbc.co.uk/news/business-12918761"
-article_text, full_html = scraper.scrape(url, "BBC")
-print(article_text)
+# scraper = NewsScraper()
+# url = "http://www.bbc.co.uk/news/business-12918761"
+# article_text, full_html = scraper.scrape(url, "BBC")
+# print(article_text)
+
+# scraper = NewsScraper()
+# url = "https://www.usatoday.com/story/entertainment/celebrities/2024/10/12/sean-diddy-combs-accuser-adria-english-responds-lawyers-withdraw/75648028007/"
+# article_text, full_html = scraper.scrape(url, "USA Today")
+# print(article_text)
