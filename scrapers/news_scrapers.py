@@ -11,6 +11,8 @@ class NewsScraper:
         # Set Chrome options to disable GPU and other settings
         self.chrome_options = Options()
         self.chrome_options.add_argument("--disable-gpu")
+        self.chrome_options.add_argument('--ignore-certificate-errors')
+        self.chrome_options.add_argument('--disable-web-security')
         self.chrome_options.add_argument("--no-sandbox")
         self.chrome_options.add_argument("--disable-dev-shm-usage")
 
@@ -309,7 +311,7 @@ class NewsScraper:
             driver.get(url)
             wait = WebDriverWait(driver, 10)
 
-            full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "dcr-1p5i1qs"))).get_attribute('outerHTML')
+            full_html = wait.until(EC.presence_of_element_located((By.ID, "maincontent"))).get_attribute('outerHTML')
 
             article_html = wait.until(EC.presence_of_element_located((By.ID, "maincontent")))
 
@@ -389,7 +391,7 @@ class NewsScraper:
             wait = WebDriverWait(driver, 10)
 
             # Wait for the article wrapper to load
-            full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "ssrcss-15tkd6i-ArticleWrapper")))
+            full_html = wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(@class, '-ArticleWrapper')]"))).get_attribute('outerHTML')
 
             # Find the elements by their data-component attributes
             elements = None
@@ -401,7 +403,7 @@ class NewsScraper:
                 print("Encountered a stale element. Re-fetching the elements...")
 
                 # If stale element exception occurs, wait for the element again and retry finding elements
-                full_html = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "ssrcss-15tkd6i-ArticleWrapper")))
+                full_html = wait.until(EC.presence_of_element_located((By.XPATH, "//*[contains(@class, '-ArticleWrapper')]"))).get_attribute('outerHTML')
                 elements = driver.find_elements(By.XPATH, "//*[@data-component='text-block' or @data-component='subheadline-block']")
 
             # Concatenate the text from the found elements
@@ -410,7 +412,6 @@ class NewsScraper:
                 article_html += element.get_attribute('outerHTML')
 
             article_text = self.remove_html_tags(article_html)
-            full_html = full_html.get_attribute('outerHTML')
 
         except Exception as e:
             print(f"An error occurred: {e}")
@@ -519,3 +520,7 @@ class NewsScraper:
 # url = "https://www.usatoday.com/story/entertainment/celebrities/2024/10/12/sean-diddy-combs-accuser-adria-english-responds-lawyers-withdraw/75648028007/"
 # article_text, full_html = scraper.scrape(url, "USA Today")
 # print(article_text)
+
+# Example writign html to file
+# with open('htmltxt.txt', 'w', encoding='utf-8') as file:
+#     file.write(full_html)
