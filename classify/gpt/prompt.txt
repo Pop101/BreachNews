@@ -2,6 +2,8 @@ Given a news article's headline, determine the following information about it:
 
 If the article is about a data breach, make sure you respond with "BreachMentioned: true".
 Otherwise, respond with "BreachMentioned: false".
+Data breaches are incidents where sensitive, protected user data is exposed on mass scales by hackers.
+Hacks on individuals, information sales, violations of privacy policies, and other similar incidents are not considered data breaches.
 
 If the headline of the article implies the main subject of the article will be a single distinct company, make sure you respond with "CompanyMentioned: <company name>", filling in the specific company name.
 If the article implies that the government will be the main subject of the article, respond with "CompanyMentioned: government"
