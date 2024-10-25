@@ -1,0 +1,41 @@
+name: vllm
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - tqdm
+  - jupyter
+  - matplotlib
+  - seaborn
+  - numpy
+  - pandas
+  - pillow
+  - scikit-learn
+  - gcc
+  - pytorch::pytorch=2.0.1
+  - nvidia::cudatoolkit=11.7
+  - cuda-cudart
+  - cuda-runtime
+  - torchvision
+  - torchaudio
+  - transformers
+  - sentence-transformers
+  - onnxruntime
+  - accelerate
+  - einops
+  - langchain=0.2.3
+  - langsmith
+  - chromadb
+  - pydantic=1.10.2
+  - sentencepiece
+  - pip
+  - pip:
+      - bitsandbytes~=0.43.1
+      - langchain_community~=0.2.3
+      - vllm
+variables:
+  CUDA_HOME: /usr/local/cuda
+  # On HYAK, set LD_LIBRARY_PATH to include the CUDA and GCC
