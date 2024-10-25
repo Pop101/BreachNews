@@ -1,6 +1,3 @@
-from chromadb import Documents, EmbeddingFunction, Embeddings
-import chromadb
-
 import pickle
 
 def save_collection(collection: "Collection", filename: str):
@@ -8,6 +5,7 @@ def save_collection(collection: "Collection", filename: str):
         pickle.dump(collection.get(), f)
         
 def load_collection(filename: str, chroma=None, collection=None) -> "Collection":
+    import chromadb
     with open(filename, 'rb') as f:
         saved_data = pickle.load(f)
         
