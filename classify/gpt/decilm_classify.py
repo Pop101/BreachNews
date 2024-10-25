@@ -94,7 +94,7 @@ prompt = FewShotPromptTemplate(
     example_prompt   = example_prompt,
     input_variables  = list(train_set.index.names),
     prefix           = prompt_prefix,
-    suffix           = '\n'.join(chain((f'{c} : {{{c}}}' for c in train_set.index.names))),
+    suffix           = '\nNow, classify the following:\n' + '\n'.join(chain((f'{c} : {{{c}}}' for c in train_set.index.names))),
 )
 
 print('Prompt formatting configured.\nExample prompt:')
