@@ -4,3 +4,4 @@ data/headlines.csv
 chromadb/*
 
 *.venv
+*.env
