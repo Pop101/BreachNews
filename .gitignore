@@ -1,6 +1,8 @@
 *.pyc
 
 data/headlines.csv
+data/companies.csv
+
 chromadb/*
 
 *.venv

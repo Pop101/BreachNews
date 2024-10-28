@@ -18,10 +18,10 @@ dependencies:
   - jupyter
   - pyarrow
   - ffmpeg
-  - pycaret=3.3.2
   - wkhtmltopdf
   - pandoc
   - pip
   - pip:
       - pandoc
       - hdbscan
+      - pycaret==3.3.2
