@@ -1,0 +1,74 @@
+!!! Records leaked comparisons
+Huz dataset
+count              12,378.00
+mean              499,134.71
+std               288,876.95
+min                 1,073.00
+25%               246,897.00
+50%               499,742.50
+75%               746,188.25
+max               999,978.00
+
+Devastator dataset
+count                 303.00
+mean           44,079,104.46
+std           193,595,483.39
+min                 6,700.00
+25%               307,500.00
+50%             1,800,000.00
+75%            19,000,000.00
+max         3,000,000,000.00
+
+Info dataset
+count                 393.00
+mean           34,998,834.32
+std            92,300,335.75
+min                    30.00
+25%               500,000.00
+50%             3,500,000.00
+75%            20,000,000.00
+max           700,000,000.00
+
+!!! Sector comparisons
+Technology, Retail, Government, Healthcare, Finance
+
+Huz dataset
+[2485, 2422, 2431, 2510, 2530]
+
+Devastator dataset
+[68, 22, 37, 48, 39]
+
+Info dataset
+[148, 35, 47, 44, 39]
+
+!!! Date comparisons
+Huz dataset
+count              12,378.00
+mean                2,012.04
+std                     7.17
+min                 2,000.00
+25%                 2,006.00
+50%                 2,012.00
+75%                 2,018.00
+max                 2,024.00
+
+Devastator dataset
+count                 303.00
+mean                2,013.73
+std                     4.49
+min                 2,004.00
+25%                 2,011.00
+50%                 2,013.00
+75%                 2,018.00
+max                 2,022.00
+
+Info dataset
+count                 393.00
+mean                2,014.84
+std                     4.15
+min                 2,004.00
+25%                 2,012.00
+50%                 2,015.00
+75%                 2,018.00
+max                 2,021.00
+
