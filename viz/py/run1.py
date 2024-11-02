@@ -62,5 +62,5 @@ for p in ax.patches:
 plt.tight_layout()
 
 # save viz as png
-plt.savefig("figures/unique_articles_per_publication.png", dpi=300)
+plt.savefig("figures/unique_articles_per_publication_all.png", dpi=300)
 # plt.show()
