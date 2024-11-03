@@ -6,3 +6,4 @@ data/companies.csv
 chromadb/*
 
 *.venv
+*.env
