@@ -26,7 +26,7 @@ info = info.rename(columns={'year   ': 'year'})
 info['records lost'] = info['records lost'].str.replace(',', '')
 info['records lost'] = pd.to_numeric(info['records lost'])
 
-
+# Compare distributions/summaries of records leaked
 to_write += '!!! Records leaked comparisons\n'
 to_write += 'Huz dataset\n'
 to_write = to_write + huz['Records Compromised'].describe().to_string() + '\n\n'
@@ -66,6 +66,7 @@ plt.title('Records lost distribution')
 plt.yscale('log')
 plt.show()
 
+# Compare distributions/summaries of sectors
 dev_sec = dev['Organization type'].mask(dev['Organization type'] == 'web', 'Technology')
 dev_sec = dev_sec.mask(dev_sec == 'tech', 'Technology')
 dev_sec = dev_sec.mask(dev_sec == 'social media', 'Technology')
@@ -120,8 +121,9 @@ bar_info = [info_sec[info_sec == 'Technology'].count(),
             info_sec[info_sec == 'Government'].count(),
             info_sec[info_sec == 'Healthcare'].count(),
             info_sec[info_sec == 'Finance'].count()]
+
 to_write += '!!! Sector comparisons\n'
-to_write = to_write + ', '.join(bar_x) + '\n\n'
+to_write = to_write + ', '.join(bar_x) + '\n'
 to_write += 'Huz dataset\n'
 to_write = to_write + str(bar_huz) + '\n\n'
 to_write += 'Devastator dataset\n'
@@ -138,6 +140,7 @@ plt.legend(['Huz', 'Devastator', 'Info'])
 plt.xticks(x, bar_x)
 plt.show()
 
+# Compare distributions/summaries of dates
 to_write += '!!! Date comparisons\n'
 to_write += 'Huz dataset\n'
 to_write = to_write + huz['Year'].describe().to_string() + '\n\n'
@@ -167,6 +170,28 @@ sns.kdeplot(info['year'], color='green', bw_method=0.6)
 plt.legend(loc='upper right')
 plt.title('Year distribution')
 plt.show()
+
+# Compare duplicate events between dev and info
+comp_dev = dev.drop(columns=['ID', 'Organization type', 'Method', 'Sources'])
+comp_info = info.drop(columns=['alternative name', 'date', 'story', 'sector', 'method', 'interesting story',
+         'data sensitivity', 'displayed records', 'source name', '1st source link',
+         '2nd source link', 'ID', 'Unnamed: 11'])
+comp_info = comp_info.rename(columns={
+         'organisation': 'Entity', 'year': 'Year', 'records lost': 'Records'
+})
+temp = comp_info['Year']
+comp_info['Year'] = comp_info['Records']
+comp_info['Records'] = temp
+comp_info = comp_info.rename(columns={
+          'Year': 'Records', 'Records': 'Year'
+})
+dupes = comp_info.merge(comp_dev, on=['Entity', 'Year', 'Records'], how='inner', indicator=True)
+
+to_write += '!!! Devastator and Info comparisons\n'
+to_write += 'Event is identified by company name, year, and number of records breached\n'
+to_write += 'Number of events that are both in Devastator and Info; ' + str(dupes.shape[0]) + '\n'
+to_write += 'Number of events in Devastator but not in Info; ' + str(dev.shape[0] - dupes.shape[0]) + '\n'
+to_write += 'Number of events in Info but not in Devastator; ' + str(info.shape[0] - dupes.shape[0]) + '\n'
 
 f = open('verfication.txt', 'w')
 f.write(to_write)
