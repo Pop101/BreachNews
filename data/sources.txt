@@ -1,1 +1,4 @@
-https://www.kaggle.com/datasets/jordankrishnayah/45m-headlines-from-2007-2022-10-largest-sites
+is_available.csv; https://www.kaggle.com/datasets/jordankrishnayah/45m-headlines-from-2007-2022-10-largest-sites
+breaches_devastator.csv; https://www.kaggle.com/datasets/thedevastator/data-breaches-a-comprehensive-list
+breaches_huz1020.csv; https://www.kaggle.com/models/huz1020/databreach-dataset
+breaches_information.csv; https://www.kaggle.com/datasets/joebeachcapital/worlds-biggest-data-breaches-and-hacks
