@@ -31,7 +31,6 @@ max           700,000,000.00
 
 !!! Sector comparisons
 Technology, Retail, Government, Healthcare, Finance
-
 Huz dataset
 [2485, 2422, 2431, 2510, 2530]
 
@@ -72,3 +71,8 @@ min                 2,004.00
 75%                 2,018.00
 max                 2,021.00
 
+!!! Devastator and Info comparisons
+Event is identified by company name, year, and number of records breached
+Number of events that are both in Devastator and Info; 96
+Number of events in Devastator but not in Info; 207
+Number of events in Info but not in Devastator; 297
