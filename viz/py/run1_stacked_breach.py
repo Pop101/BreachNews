@@ -40,35 +40,39 @@ article_counts["Total"] = article_counts.sum(axis=1)
 
 article_counts = article_counts.sort_values(by="Total", ascending=False)
 
-# # Print out the counts for each publication
-# print("Publication-wise unique article counts:")
-# for publication, row in article_counts.iterrows():
-#     print(f"Publication: {publication}")
-#     print(f"  Total articles: {row['Total']}")
-#     print(f"  BreachMentioned=False: {row.get('False', 0)}")
-#     print(f"  BreachMentioned=True: {row.get('True', 0)}")
-#     print()
+# Print out the counts for each publication
+print("Publication-wise unique article counts:")
+for publication, row in article_counts.iterrows():
+    false_count = len(data_csv[(data_csv["Publication"] == publication) & (data_csv["BreachMentioned"] == "False")])
+    not_false_count = len(data_csv[(data_csv["Publication"] == publication) & (data_csv["BreachMentioned"] != "False")])
+    print(f"Publication: {publication}")
+    print(f"  Total articles: {row['Total']}")
+    print(f"  BreachMentioned=False: {false_count}")
+    print(f"  BreachMentioned=True: {not_false_count}")
+    print()
 
-# Plotting the stacked bar chart
+# Stacked bar chart (for True/False), by publication
 plt.figure(figsize=(12, 8))
 article_counts[["False", "True"]].plot(
     kind="bar",
     stacked=True,
     color=["lightcoral", "lightgreen"],
-    ax=plt.gca(),
-    # legend=False,
+    ax=plt.gca()
 )
 plt.title("Unique Article Counts by Publication with Data Breach Mentioned")
 plt.xlabel("Publication")
 plt.ylabel("Number of Unique Articles")
 plt.xticks(rotation=45)
 
-# Add a label with counts for True and False
 for i, (publication, row) in enumerate(article_counts.iterrows()):
+    # True/False counts for "BreachMentioned" column
+    false_count = len(data_csv[(data_csv["Publication"] == publication) & (data_csv["BreachMentioned"] == "False")])
+    true_count = len(data_csv[(data_csv["Publication"] == publication) & (data_csv["BreachMentioned"] != "False")])
+    # Add a count labels to plot
     plt.text(
         i,
-        row["True"] + row["False"] / 2,
-        f"False: {int(row.get('False', 0)):,}\nTrue: {int(row.get('True', 0)):,}",
+        true_count + false_count / 2,
+        f"False: {false_count:,}\nTrue: {true_count:,}",
         ha="center",
         va="bottom",
         fontsize=10,
@@ -77,6 +81,7 @@ for i, (publication, row) in enumerate(article_counts.iterrows()):
 
 plt.tight_layout()
 
-# Save and show the plot
+
 plt.savefig("figures/stacked_breach_mentions_by_publication.png")
-# plt.show()
+plt.show()
+
