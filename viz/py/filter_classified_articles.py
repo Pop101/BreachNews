@@ -37,7 +37,7 @@ data_csv = data_csv[(data_csv["CompanyMentioned"] != "Government") & (data_csv["
 print(f"Total unique articles, with both BREACH and COMPANY mentioned: {len(data_csv)}")
 
 # FILTERS:
-# de-duplicate by URL
+# Drop duplicates by URL
 # BreachMentioned != False/NA
 # CompanyMentioned != False/NA
 # CompanyMentioned != Government (choice to focus on publicly-traded companies)
