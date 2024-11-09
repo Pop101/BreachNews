@@ -1,0 +1,137 @@
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from trl import SFTTrainer
+import torch
+import pandas as pd
+import os
+
+TRAINING_DATA_PATH   = './classify/irr/train_set_human/leon.csv'
+TEST_DATA_PATH       = './classify/irr/test_set_human/caitlyn.csv'
+OUTPUT_DIR           = './classify/qlora/model'
+EPOCHS               = 15
+
+PREFIX               = open('./classify/qlora/prompt_QLora.txt', 'r').read()
+
+"""
+TRAINING_DATA_PATH   = './llm_classify/trainset.csv'
+TEST_DATA_PATH       = './llm_classify/testset.csv'
+OUTPUT_DIR           = '/gscratch/stf/lleibm/decilm-7b-headline-qlora'
+EPOCHS               = 30
+"""
+
+model_name = "Deci/DeciLM-7B"
+decilm = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    torch_dtype=torch.bfloat16,
+    device_map="auto",
+    use_cache=True,
+    trust_remote_code=True
+)
+
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+tokenizer.pad_token = tokenizer.eos_token
+tokenizer.padding_side = "right"
+
+def fix_set(frame):
+    frame = frame.loc[:, ~frame.columns.str.contains('^Unnamed')] # Drop all Unnamed: columns
+    frame['Headline'] = frame['Headline'].apply(str.strip)
+    frame.drop_duplicates(subset=['Headline'], inplace=True)
+    frame.drop_duplicates(subset=['URL'], inplace=True)
+
+    frame.set_index(['Date', 'Publication', 'Headline', 'URL'], inplace=True)
+    frame.fillna(False, inplace=True)
+    return frame
+
+train_set = fix_set(pd.read_csv(TRAINING_DATA_PATH))
+test_set  = fix_set(pd.read_csv(TEST_DATA_PATH))
+
+from itertools import chain
+
+def to_prompt(row:pd.Series, index=True, columns=True, index_names=None):
+    val = list()
+    if index:
+        if not index_names:
+            index_names = row.index.names
+        if not index_names:
+            index_names = ['index']
+        if not len(index_names) == len(row.name):
+            raise Exception("Index names must be the same length as the index")
+        for i, name in enumerate(index_names):
+            val.append(f"{name}: {row.name[i]}")
+    
+    if columns:
+        for col, value in row.items():
+            val.append(f"{col} : {value}")
+    return '\n'.join(val)
+
+def construct_fragment(sample):
+  prompt = "<s>"
+  prompt += to_prompt(sample, index=True, columns=False)
+  prompt += " ###> "
+  prompt += to_prompt(sample, index=False, columns=True)
+  prompt += "</s>"
+  return prompt
+
+train_set['text'] = PREFIX + train_set.apply(construct_fragment, axis=1)
+test_set['text']  = PREFIX + test_set.apply(construct_fragment, axis=1)
+
+# Convert to HF Dataset
+from datasets import Dataset
+
+train_set = Dataset.from_pandas(train_set['text'].to_frame())
+test_set  = Dataset.from_pandas(test_set['text'].to_frame())
+
+train_set[0]
+
+# Set up lora config to be identical to QLora
+from peft import LoraConfig, prepare_model_for_kbit_training, get_peft_model
+
+lora_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    lora_dropout=0.1,
+    #  The modules to apply the LoRA update matrices.
+    target_modules = ["gate_proj", "down_proj", "up_proj"],
+    task_type="CAUSAL_LM"
+)
+
+decilm.enable_input_require_grads()
+decilm = get_peft_model(decilm, lora_config)
+
+# Set up trainer
+from transformers import TrainingArguments
+
+training_args = TrainingArguments(
+        output_dir=OUTPUT_DIR,
+        evaluation_strategy="steps",
+        do_eval=True,
+        auto_find_batch_size=True,
+        log_level="debug",
+        optim="paged_adamw_32bit",
+        save_steps=25,
+        logging_steps=100,
+        learning_rate=3e-4,
+        weight_decay=0.01,
+        max_steps=len(train_set) * EPOCHS,
+        warmup_steps=150,
+        # if you're using a T4, or non-ampere supported chip comment out the below line.
+        bf16=True,
+        tf32=True,
+        gradient_checkpointing=True,
+        max_grad_norm=0.3, #from the paper
+        lr_scheduler_type="reduce_lr_on_plateau",
+)
+
+trainer = SFTTrainer(
+    model=decilm,
+    args=training_args,
+    peft_config=lora_config,
+    tokenizer=tokenizer,
+    dataset_text_field='text',
+    train_dataset=train_set,
+    eval_dataset=test_set,
+    max_seq_length=4096,
+    dataset_num_proc=os.cpu_count(),
+)
+
+trainer.train()
+trainer.save_model()

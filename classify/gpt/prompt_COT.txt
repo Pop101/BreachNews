@@ -16,6 +16,7 @@ Date : 20111029
 Publication : FOX
 Headline : Hackers Hit Nigeria Anti-Fraud Agency Website
 URL : https://www.foxnews.com/world/2011/10/29/hackers-hit-nigeria-anti-fraud-agency-website/
+Let's think step-by-step: From the headline, we can only tell that the article is about a cyber attack. There are various kind of attack, so it's not clear that there will be a data breach. There is also no mentioned of the company that caused the data breach anywhere.
 BreachMentioned : False
 CompanyMentioned : False
 
@@ -23,19 +24,22 @@ Date : 20090311
 Publication : Washington Post
 Headline : GOP Candidate for Minn. Senate Warns of Data Leak
 URL : https://www.washingtonpost.com/wp-dyn/content/article/2009/03/11/AR2009031100574.html?hpid=sec-politics
+Let's think step-by-step: From the headline, the candidate only warn about a suspects data leak. There is clear intention that there is a data breach yet. No infomration about company of originas of the data breach is mentioned.
 BreachMentioned : False
 CompanyMentioned : False
 
-Date : 20141230
-Publication : Daily Mail
-Headline : Was Sony hack carried out by disgruntled ex-staff? Security officials brief FBI that former employees were behind crippling hack - and NOT North Korea
-URL : https://www.dailymail.co.uk/news/article-2890722/U-S-suspects-North-Korea-help-attacking-Sony-Pictures-source.html
+Date : 20190626
+Publication : CNBC
+Headline : Leaked Wayfair receipt shows 1,600 mattresses and 100 bunk beds destined for detention camp for kids
+URL : https://www.cnbc.com/2019/06/26/leaked-wayfair-receipt-shows-beds-destined-for-detention-camp-for-kids.html
+Let's think step-by-step: The headline mentiones leaked receipts, which is the clear indication that there is a data breach. The company name is also mentioned as Wayfair.
 BreachMentioned : True
-CompanyMentioned : Sony
+CompanyMentioned : Wayfair
 
 Date : 20180404
 Publication : Washington Post
 Headline : Panera’s data breach puts attention on risks of loyalty programs
 URL : https://www.washingtonpost.com/news/business/wp/2018/04/04/paneras-data-breach-puts-attention-on-risks-of-loyalty-programs/
+Let's think step-by-step: The headline implicitly states that the data breach is about loyalty programs, and the company name is also mentioned as Panera.
 BreachMentioned : True
 CompanyMentioned : Panera
