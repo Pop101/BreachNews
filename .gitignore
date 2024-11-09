@@ -1,6 +1,14 @@
 *.pyc
 
 data/headlines.csv
+data/companies.csv
+
 chromadb/*
 
 *.venv
+*.env
+
+***.safetensors
+**model_**
+
+checkpoints/**
