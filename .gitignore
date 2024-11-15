@@ -9,3 +9,8 @@ chromadb/*
 
 *.venv
 *.env
+
+***.safetensors
+**model_**
+
+checkpoints/**

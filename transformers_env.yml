@@ -34,3 +34,4 @@ dependencies:
       - langchain_community~=0.2.3
       - einops
       - hdbscan
+      - setfit
