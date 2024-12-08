@@ -1,0 +1,175 @@
+biotechnology
+design
+internet
+aviation & aerospace
+construction
+airlines/aviation
+entertainment
+nan
+information technology and services
+consumer electronics
+retail
+leisure, travel & tourism
+oil & energy
+restaurants
+publishing
+writing and editing
+sporting goods
+package/freight delivery
+marketing and advertising
+financial services
+automotive
+photography
+computer & network security
+primary/secondary education
+telecommunications
+consumer goods
+online media
+graphic design
+banking
+real estate
+computer software
+capital markets
+sports
+education management
+environmental services
+mining & metals
+pharmaceuticals
+investment banking
+shipbuilding
+hospital & health care
+fine art
+broadcast media
+facilities services
+transportation/trucking/railroad
+international trade and development
+human resources
+luxury goods & jewelry
+insurance
+computer hardware
+semiconductors
+music
+mechanical or industrial engineering
+public relations and communications
+food & beverages
+apparel & fashion
+venture capital & private equity
+logistics and supply chain
+defense & space
+printing
+investment management
+wine and spirits
+computer games
+health, wellness and fitness
+farming
+non-profit organization management
+electrical/electronic manufacturing
+e-learning
+food production
+media production
+consumer services
+newspapers
+research
+veterinary
+architecture & planning
+cosmetics
+events services
+legal services
+wholesale
+information services
+political organization
+hospitality
+law enforcement
+museums and institutions
+computer networking
+staffing and recruiting
+executive office
+government administration
+animation
+business supplies and equipment
+fund-raising
+utilities
+management consulting
+arts and crafts
+higher education
+chemicals
+machinery
+performing arts
+professional training & coaching
+civil engineering
+accounting
+furniture
+market research
+medical devices
+supermarkets
+recreational facilities and services
+building materials
+import and export
+philanthropy
+tobacco
+motion pictures and film
+translation and localization
+gambling & casinos
+outsourcing/offshoring
+maritime
+security and investigations
+textiles
+wireless
+warehousing
+religious institutions
+packaging and containers
+renewables & environment
+dairy
+ranching
+law practice
+think tanks
+commercial real estate
+program development
+mental health care
+railroad manufacture
+paper & forest products
+international affairs
+alternative medicine
+public policy
+public safety
+alternative dispute resolution
+nonprofit organization management
+individual & family services
+military
+industrial automation
+civic & social organization
+plastics
+government relations
+medical practice
+glass, ceramics & concrete
+libraries
+judiciary
+nanotechnology
+
+
+web
+financial
+government
+tech
+retail
+NGO
+misc
+transport
+legal
+gaming
+telecoms
+app
+finance
+health 
+misc, health
+tech, health
+academic
+tech, app
+web, tech
+government, health
+web, military
+tech, retail
+military
+military, health
+web, gaming
+government, military

@@ -30,7 +30,7 @@
 40,EyeEm,22000000,2019,2019-02-01,web,hacked,1.0,eyeem,eyeem.com,2011.0,photography,201 - 500,"berlin, berlin, germany",germany,linkedin.com/company/eyeem,87.0,203.0,0
 47,Fling,40000000,2016,2016-05-01,web,hacked,4.0,fling,fling.fm,2011.0,music,1 - 10,"berlin, berlin, germany",germany,linkedin.com/company/fling,3.0,5.0,0
 46,Firebase,100000000,2018,2018-06-01,app,poor security,5.0,firebase,firebase.com,2011.0,computer software,11 - 50,"mountain view, california, united states",united states,linkedin.com/company/firebase,9.0,18.0,0
-34,Dubsmash,162000000,2019,2019-02-01,web ,hacked,1.0,dubsmash,dubsmash.com,2014.0,internet,11 - 50,"berlin, berlin, germany",germany,linkedin.com/company/dubsmash,11.0,72.0,0
+34,Dubsmash,162000000,2019,2019-02-01,web,hacked,1.0,dubsmash,dubsmash.com,2014.0,internet,11 - 50,"berlin, berlin, germany",germany,linkedin.com/company/dubsmash,11.0,72.0,0
 49,Gab,4000000,2021,2021-03-01,tech,hacked,3.0,gab,globalbuyout.com,2012.0,investment management,11 - 50,"alcobendas, madrid, spain",spain,linkedin.com/company/gab,14.0,20.0,0
 50,Gap Inc,800000,2007,2007-09-01,retail,lost device ,2.0,gap inc.,gapinc.com,1969.0,retail,10001+,"san francisco, california, united states",united states,linkedin.com/company/gap-inc-,8610.0,41628.0,0
 48,Fotolog,16000000,2019,2019-02-01,web,hacked,1.0,fotolog,fotolog.com,2002.0,internet,11 - 50,"new york, new york, united states",united states,linkedin.com/company/fotolog,19.0,73.0,0
@@ -44,11 +44,11 @@
 125,Weebly,43000000,2016,2016-10-01,web,hacked,4.0,weebly,weebly.com,2006.0,internet,201 - 500,"san francisco, california, united states",united states,linkedin.com/company/weebly,178.0,441.0,0
 124,Waterly,1000000,2017,2017-01-01,app,poor security,3.0,waterly,waterly.nl,2015.0,food & beverages,1 - 10,"amsterdam, noord-holland, netherlands",netherlands,linkedin.com/company/waterly,1.0,1.0,0
 119,Urban Massage,309000,2018,2018-11-01,app,poor security,2.0,urban massage,urbanmassage.com,2014.0,"health, wellness and fitness",201 - 500,"london, greater london, united kingdom",united kingdom,linkedin.com/company/urban-massage,131.0,195.0,0
-118,Ubuntu,2000000,2013,2013-07-01,"tech, web",hacked,3.0,ubuntu,ubuntu.com,2004.0,computer software,201 - 500,"london, greater london, united kingdom",united kingdom,linkedin.com/company/ubuntu,150.0,293.0,0
+118,Ubuntu,2000000,2013,2013-07-01,"web, tech",hacked,3.0,ubuntu,ubuntu.com,2004.0,computer software,201 - 500,"london, greater london, united kingdom",united kingdom,linkedin.com/company/ubuntu,150.0,293.0,0
 104,Three,130000,2016,2016-11-01,telecoms,hacked,2.0,three.,three.co.uk,2003.0,telecommunications,5001 - 10000,"berks, west berkshire, united kingdom",united kingdom,linkedin.com/company/three-co-uk,3366.0,12380.0,0
 94,Spartanburg Regional Healthcare System,400000,2011,2011-05-01,health ,lost device ,4.0,spartanburg regional healthcare system,spartanburgregional.com,1921.0,hospital & health care,1001 - 5000,"spartanburg, south carolina, united states",united states,linkedin.com/company/spartanburg-regional-healthcare-system,1579.0,2622.0,0
 81,Petflow,1000000,2019,2019-02-01,retail,poor security,1.0,petflow,petflow.com,2010.0,consumer services,11 - 50,"new york, new york, united states",united states,linkedin.com/company/pet-flow,20.0,76.0,0
-82,Plex,15000000,2022,2022-08-01,web ,hacked,1.0,plex,plexgroup.com,1990.0,design,11 - 50,"berlin, berlin, germany",germany,linkedin.com/company/plex,15.0,55.0,0
+82,Plex,15000000,2022,2022-08-01,web,hacked,1.0,plex,plexgroup.com,1990.0,design,11 - 50,"berlin, berlin, germany",germany,linkedin.com/company/plex,15.0,55.0,0
 86,RockYou!,32000000,2009,2009-12-01,"web, gaming",hacked,1.0,rockyou,rockyou.com,2005.0,marketing and advertising,201 - 500,"san francisco, california, united states",united states,linkedin.com/company/rockyou,176.0,536.0,0
 87,Roll20,4000000,2019,2019-02-01,gaming,hacked,1.0,roll20,roll20.net,2012.0,computer software,11 - 50,"madrid, madrid, spain",spain,linkedin.com/company/roll20,13.0,14.0,0
 93,Sony Online Entertainment,24600000,2011,2011-05-01,gaming,hacked,3.0,sony online entertainment,soe.com,1995.0,computer games,201 - 500,"san diego, california, united states",united states,linkedin.com/company/sony-online-entertainment,122.0,1728.0,0
@@ -118,7 +118,7 @@
 0,"""Apple""",12367232,2012,2012-03-01,"tech, retail",oops!,2.0,apple,apple.com,1976.0,consumer electronics,10001+,"cupertino, california, united states",united states,linkedin.com/company/apple,90095.0,179531.0,14
 92,SolarWinds,50000000,2020,2020-12-01,app,hacked,3.0,solarwinds,solarwinds.com,1999.0,computer software,1001 - 5000,"austin, texas, united states",united states,linkedin.com/company/solarwinds,1333.0,2886.0,17
 7,Amazon,5000000,2018,2018-11-01,retail,oops!,1.0,amazon,amazon.com,1994.0,internet,10001+,"seattle, washington, united states",united states,linkedin.com/company/amazon,93247.0,161866.0,18
-10,Apple,275000,2013,2013-07-01,"tech, web",hacked,1.0,apple,apple.com,1976.0,consumer electronics,10001+,"cupertino, california, united states",united states,linkedin.com/company/apple,90095.0,179531.0,19
+10,Apple,275000,2013,2013-07-01,"web, tech",hacked,1.0,apple,apple.com,1976.0,consumer electronics,10001+,"cupertino, california, united states",united states,linkedin.com/company/apple,90095.0,179531.0,19
 35,Ebay,145000000,2014,2014-05-01,web,hacked,1.0,ebay,ebayinc.com,1995.0,internet,10001+,"san jose, california, united states",united states,linkedin.com/company/ebay,10115.0,26752.0,19
 130,Yahoo,550000000,2013,2016-12-01,web,hacked,2.0,yahoo,yahoo.com,1994.0,internet,10001+,"sunnyvale, california, united states",united states,linkedin.com/company/yahoo,7072.0,34947.0,21
 116,Uber,57000000,2017,2017-11-01,app,hacked,1.0,uber,uber.com,2009.0,internet,10001+,"san francisco, california, united states",united states,linkedin.com/company/uber-com,22415.0,36867.0,23

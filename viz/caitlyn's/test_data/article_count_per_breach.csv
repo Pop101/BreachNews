@@ -1,0 +1,8 @@
+,organisation,records lost,year,breach_date,sector,method,data sensitivity,name,domain,year founded,industry,size range,locality,country,linkedin url,current employee estimate,total employee estimate,number of articles
+1,500px,14800000,2019,2019-02-01,web,hacked,2.0,500px,500px.com,2009.0,internet,201 - 500,"toronto, ontario, canada",canada,linkedin.com/company/500px,123.0,281.0,0
+2,8fit,20000000,2019,2019-02-01,web,hacked,1.0,8fit,8fit.com,2014.0,internet,51 - 200,"berlin, berlin, germany",germany,linkedin.com/company/8fit,56.0,87.0,0
+5,Acer,3000000,2021,2021-10-01,tech,hacked,1.0,acer,acer.com,1976.0,computer hardware,5001 - 10000,"taipei city, taiwan, taiwan",taiwan,linkedin.com/company/acer,2576.0,7671.0,0
+113,UPS,4000000,2014,2014-08-01,retail,hacked,3.0,ups,ups.com,1907.0,transportation/trucking/railroad,10001+,"atlanta, georgia, united states",united states,linkedin.com/company/ups,59712.0,132381.0,3
+103,Target,70000000,2013,2013-12-01,retail,hacked,3.0,target,target.com,1962.0,retail,10001+,"minneapolis, minnesota, united states",united states,linkedin.com/company/target,60602.0,204360.0,141
+38,Equifax,143000000,2017,2017-09-01,finance,hacked,4.0,equifax,equifax.com,1899.0,financial services,5001 - 10000,"atlanta, georgia, united states",united states,linkedin.com/company/equifax,4415.0,11328.0,163
+43,Facebook,50000000,2018,2018-03-01,web,hacked,1.0,facebook,facebook.com,2004.0,internet,10001+,"menlo park, california, united states",united states,linkedin.com/company/facebook,36149.0,49059.0,208
