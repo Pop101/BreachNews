@@ -1,0 +1,201 @@
+Date,Publication,Headline,BreachMentioned,CompanyMentioned,BreachMentioned,CompanyMenioned
+20210405,The Guardian,"India National record 103,558 new Covid cases in 24 hours",False,False,False,False
+20130601,Washington Post,What the media forget about leaks,False,False,False,False
+20080826,New York Times,Bits: AT&T Launches New Data Plans for iPhone Users Roaming Abroad,False,AT&T,False,False
+20140316,New York Times,Pilot Spoke to Air Controllers After Shutdown of Data System,False,False,False,False
+20160330,CNBC,Illinois' epic budget deadlock sets dubious  record,False,False,False,False
+20130403,Washington Post,Milwaukee archdiocese to release abuse records,False,False,False,False
+20190611,The Guardian,USA 13-0 Thailand  Ruthless USA break World Cup record,False,False,False,False
+20180522,The Guardian,The level of violence is brutal'  Central Americans flee homes in record numbers,False,False,False,False
+20140514,Daily Mail,The Edward Snowden guide to encryption: Fugitive’s 12-minute homemade video ahead of leaks explaining how to avoid NSA from tracking emails,False,False,False,False
+20101027,BBC,Dream recording device 'possible',False,False,False,False
+20141230,Daily Mail,Was Sony hack carried out by disgruntled ex-staff? Security officials brief FBI that former employees were behind crippling hack - and NOT North Korea,True,Sony,True,True
+20221203,New York Post,Andrew Huff said COVID leaked from the Wuhan Institute of Virology in China two years ago and blamed authorities for the “biggest US intelligence failure since 9/11.”,False,False,False,False
+20190223,The Guardian,Confidential emails between executives leaked online,True,false,False,False
+20120402,CNN,1.5 million card numbers hacked,Yes,Target,True,True
+20140101,Daily Mail,Hackers reveal cell phone numbers of 4.6MILLION Snapchat users 'in bid to raise awareness of app's security issues',Yes,Snapchat,True,True
+20190710,Washington Post,"Civil rights, disabilities groups urge Florida to stop building student database they call 'massive surveillance effort’",False,Government,False,False
+20220310,Daily Mail,"Global death toll of Covid pandemic may be 18MILLION - three times higher than official records, analysis says",False,False,False,False
+20131125,USA Today,"Nasdaq 4000 a prelude to run at 2000 record?7 hours, 56 minutesMarkets",False,False,False,False
+20160920,CNBC,"Buy Intel as a data center cloud play, Susquehanna says",False,Intel,False,False
+20210825,CNBC,"S&P 500, Nasdaq close at records – Three investors share what they're watching",False,False,False,False
+20160116,New York Post,How to fight off hackers from getting into your wallet         :0,False,False,False,False
+20130803,CNN,Hackers can watch you on your TV,False,False,False,False
+20150619,USA Today,Slavery records will soon be easily searchable online,False,False,False,False
+20180827,Daily Mail,Michael Cohen's attorney admits he DOESN'T know if ex-Trump fixer can show president knew in advance of Russian hacking despite claiming it after bombshell guilty plea,False,Government,False,False
+20131213,USA Today,"Not just the NSA: Local cops tap cellphone dataNot just the NSA: Local cops tap cellphone dataAn increasing number of police agencies across the USA are snatching your cellphone dat...An increasing number of police agencies across the USA are snatching your cellphone data, whether you're a suspect or not.Nation5 days, 9 hours agoJohn Kelly",False,False,False,False
+20210906,CNBC,"Correction may strike stocks after a record September, says market bull Tom Lee",False,False,False,False
+20110809,BBC,Mobiles become emergency data net,False,False,False,False
+20101218,Daily Mail,"Mother cuts out the heart of her daughter, four, as she listens to recording of Koran in ritual killing'",False,False,False,False
+20130628,New York Post,Retired General under investigation for leaking 'Stuxnet' cyber attack details,False,False,False,False
+20190215,Washington Post,"The U.S. government and Facebook are negotiating a record, multibillion-dollar fine for the company’s privacy lapses",True,Government,False,False
+20160308,CNN,Beehive raises record-breaking $10 million,False,Beehive,False,False
+20210419,The Guardian,"Patrick Marleau’s journey from Canadian farmboy to 1,768-game recordbreaker",False,False,False,False
+20150116,CNBC,What?                                                  DEA kept secret phone records for years,False,False,False,False
+20210719,The Guardian,"US condemns China for ‘malicious’ cyberattacks, including Microsoft hack",True,Microsoft,True,True
+20220220,USA Today,"Bush, Obama, Trump all abuse Presidential Records Act to…",False,False,False,False
+20140712,New York Times,Chinese Businessman Is Charged in Plot to Steal U.S. Military Data,True,False,False,False
+20201129,USA Today,US records 200K daily cases; Colorado Gov. tests…,False,False,False,False
+20180814,FOX,Team Trump rallies against ‘Apprentice’ villain’s claims of ‘N-word’ recording,False,False,False,False
+20220223,CNBC,Morgan Stanley says flu vaccine data is likely to boost Moderna's stock,False,Morgan Stanley,False,False
+20220606,CNBC,A record-high Social Security cost-of-living adjustment in 2023 may affect program's depletion dates,False,False,False,False
+20120723,CNBC,Treasury Yields at Record Lows,False,False,False,False
+20221116,FOX,"Several people found dead in AZ home, gas leak likely cause of death",False,False,False,False
+20221013,BBC,Bowen equals European record as Hammers progress,False,False,False,False
+20110717,Washington Post,Murdoch offers apology over hacking scandal,False,False,False,False
+20210127,The Guardian,Apple  Company records most profitable quarter ever as sales soar amid pandemic,False,Apple,False,False
+20130821,New York Times,Manning Sentenced to 35 Years for Leaking Government Secrets,True,Government,False,False
+20160407,FOX,"Student who criticized radical Islam hacked, shot to death in Bangladesh",False,False,False,False
+20200214,The Guardian,Uefa How leaked emails and invoices led to ban from Europe,False,False,False,False
+20180404,Washington Post,Panera’s data breach puts attention on risks of loyalty programs,True,Panera,True,True
+20110801,New York Times,Ted Bundy's DNA to Be Added to National Database,False,False,False,False
+20220226,FOX,TROUBLING': Biden SCOTUS pick Ketanji Brown Jackson's record of reversals brings scrutiny,False,False,False,False
+20210522,The Guardian,Lewandowski scores 41st Bundesliga goal of season to break Müller’s record,False,False,False,False
+20210520,FOX,White House won’t say if there is evidence to disprove COVID Wuhan lab leak theory,False,False,False,False
+20150627,USA Today,WashingtonOPM hack Q&A: What we know and what we don't,True,False,True,True
+20220815,Washington Post,The curious timing of Trump naming two allies to access his records,False,False,False,False
+20150814,Daily Mail,Hillary's emails WERE backed up to another server - and it may still exist - as the FBI works to figure out how well the data was scrubbed,True,Government,False,False
+20220317,Washington Post,"‘Unprecedented’ wave of hacking attacks hit Russian government websites, ministry says",True,Government,False,False
+20120203,Washington Post,"Hacker group intercepts call between FBI, Scotland Yard discussing hackers",True,False,False,False
+20200406,CNN,NFL kicker who set a record for the longest field goal dies of coronavirus,False,False,False,False
+20140602,CNBC,Futures edge higher ahead of economic data,False,False,False,False
+20110605,CNBC,"Japan to Avoid Current Account Deficit, Data Show",False,False,False,False
+20160109,FOX,RECORD-SETTING PRIZE: Powerball frenzy pushes jackpot up to $900M,False,False,False,False
+20180906,CNBC,US Treasury yields fall after weak employment data,False,False,False,False
+20190924,BBC,Manchester United revenues hit new record high,False,Manchester United,False,False
+20171018,The Guardian,Mr Robot or Mr Woebot?  Why the hacker drama might need a restart,False,False,False,False
+20221020,The Guardian,JFK  Biden officials sued over delayed release of assassination records,False,False,False,False
+20210916,New York Times,"A group of older Cuban musicians recorded some of their favorite songs in 1996, and the album became an unlikely blockbuster. How do we hear it now?",False,False,False,False
+20160809,CNBC,"With Nasdaq at a record, here are the stocks hedge funds see lifting it  higher",False,Nasdaq,False,False
+20210719,Washington Post,Key question for Americans overseas: Can their phones be hacked?,False,False,False,False
+20190627,Washington Post,Google users can now auto-delete location data,False,Google,False,False
+20210719,New York Post,"US and allies blame China for massive Microsoft email hack, other attacks",True,Microsoft,True,True
+20140830,The Guardian,Swazi Leaks uses social networks to show royal's opulent lifestyle,False,False,False,False
+20200724,The Guardian,Rebekah Vardy denies leaking stories to the Sun,False,False,False,False
+20210903,The Guardian,DeSantis appeals mask mandate ruling amid record deaths,False,False,False,False
+20120620,Daily Mail,It's a Solstice scorcher! Northeastern U.S. bakes in record-breaking high temperatures of ONE HUNDRED degrees,False,False,False,False
+20170725,New York Times,Scaramucci on Leaks: ‘I’m Going to Fire Everybody’,False,False,False,False
+20211113,The Guardian,"UK records 157 deaths; Germany mobilizes 12,000 soldiers to fight coronavirus– report",False,False,False,False
+20220906,New York Times,Surveillance video raised new questions about a breach of election data by pro-Trump activists in a Georgia county.,True,False,False,False
+20170812,CNBC,"Bitcoin vaults to new record above $4K, boosted by Japan and multiplying its value fourfold",False,False,False,False
+20170531,The Guardian,LA homelessness jumps to record-breaking level,False,False,False,False
+20150219,The Guardian,Oscars television broadcast set to score record ad revenues,False,False,False,False
+20180609,USA Today,Facebook gave some companies special access to data on users' friends,True,Facebook,False,False
+20090311,Washington Post,GOP Candidate for Minn. Senate Warns of Data Leak,True,false,False,False
+20180716,Washington Post,Twitter suspends Guccifer and DCLeaks after Mueller links them to Russian hacking operation,True,Twitter,True,True
+20180104,The Guardian,"Personal data of a billion Indians sold online for £6, report claims",True,True,True,True
+20180617,CNBC,"Veteran tech investor sees record tech rally failing, turns to financials                              Stephanie Landsman",False,False,False,False
+20150712,USA Today,NationUltramarathoner sets Appalachian Trail record,False,False,False,False
+20200522,CNBC,"Market could get a boost as states reopen, but new economic data will show just how bad things got...",False,False,False,False
+20170701,Daily Mail,Stephen Curry agrees to record $201million deal with reigning NBA champions Golden State Warriors,False,Golden State Warriors,False,False
+20181214,CNBC,"This is the most volatile year on record, and one strategist sees wild moves sticking around",False,False,False,False
+20161230,Washington Post,Russian hackers penetrated U.S. electricity grid through a utility in Vermont,True,Government,False,False
+20141115,Daily Mail,New recordings from Michael Brown shooting in Ferguson show how fatal confrontation took less than 90 seconds,False,False,False,False
+20160813,CNBC,"Asia markets end mostly higher, shrugging off disappointing China economic  data",False,False,False,False
+20120802,BBC,Hackers identify charity attacker,True,False,False,False
+20210109,New York Post,"US reports more than 4,000 COVID-19 deaths in one day — a new record",False,False,False,False
+20220507,New York Post,Julissia Batties cries out to her grandmother in a heart-breaking audio recording obtained by The Post.,False,False,False,False
+20180424,FOX,Comey's leak contact,True,FBI,False,False
+20170109,CNBC,"Conway dismisses need for hack probe, says Trump may roll back sanctions on Russia",False,Government,False,False
+20130811,New York Times,Leaker’s Father Says He Will Visit Son in Russia,False,False,False,False
+20180908,USA Today,Serena chasing record held by homophobe,False,False,False,False
+20210827,New York Times,Zeynep TufekciShow Me the Data!,False,False,False,False
+20211222,CNN,Obamacare is on pace for record enrollment. Here's why,False,False,False,False
+20141101,BBC,US shares close at record levels,False,False,False,False
+20170324,CNBC,"A record number of Americans are now millionaires, new study shows",False,false,False,False
+20150202,New York Times,U.S. Reverses Decision to Classify Data on Afghan Army and PoliceNYT Now,False,Government,False,False
+20170801,USA Today,"On Politics                                              In leaked talk, Kushner says Trump campaign too unorganized to collude",False,Government,False,False
+20110615,New York Times,"College-Readiness Low Among State Graduates, Data Show",False,False,False,False
+20101103,Daily Mail,Modigliani nude sells for record $69m in New York's biggest art buy in two years,False,false,False,False
+20170719,CNBC,US Treasurys trade flat after data releases,False,False,False,False
+20210612,Washington Post,Leaked letters and recordings rock the Southern Baptist Convention,False,False,False,False
+20200809,Washington Post,"Rough seas are hampering response to Mauritius ship leak; oil spill reaches 1,000 tons",False,False,False,False
+20131115,Washington Post,Facebook makes changes to its data use policies,False,Facebook,False,False
+20210705,CNBC,China's tech crackdown has a new battleground — data,True,China,False,False
+20160710,Daily Mail,Have photos of the dead body of Dallas sniper been leaked? Images posted online appear to show cop killer Micah Johnson moments after he was taken out by police robot,True,False,False,False
+20151102,FOX,Obama issues executive order that keeps notice of criminal record off federal job applications,False,False,False,False
+20120523,New York Times,"Exclusive: At $25 Million, a Record Sale in Miami",False,false,False,False
+20120626,FOX,"arrests of suspected hackers in the United States, Europe, Asia and Australia",True,False,False,False
+20120404,New York Post,Schools chancellor eyes teacher data for parents -- but not the public,False,False,False,False
+20131109,USA Today,"Minnesota Vikings receiver arrested for DWIMinnesota Vikings receiver arrested for DWIJail records show he was booked at 5:39 a.m. Saturday.Jail records show he was booked at 5:39 a.m. Saturday.Nfl5 hours, 12 minutes agoTom Pelissero",False,False,False,False
+20140326,CNN,Windows XP's invitation to hackers,False,False,False,False
+20160407,Washington Post,A patient secretly recorded doctors as they operated on her. Should she be so distressed by what she heard?,False,False,False,False
+20180816,Washington Post,"Omarosa Manigault Newman releases secret recording of $15,000-a-month job offer from Lara Trump",False,False,False,False
+20140922,Washington Post,White House breach,True,Government,False,False
+20150611,FOX,Senate blocks cybersecurity bill days after hacking,False,False,False,False
+20220424,Daily Mail,Kevin's a lying traitor': Elizabeth Warren excoriates House Republican Leader Kevin McCarthy over leaked Trump audio and says GOP leaders' support for the ex-President is an 'illness',False,False,False,False
+20111029,FOX,Hackers Hit Nigeria Anti-Fraud Agency Website,True,Nigeria Anti-Fraud Agency,False,False
+20170101,FOX,Flight attendants can't 'think straight' after 'toxic fumes' leak,False,False,False,False
+20201111,Washington Post,"U.S. records more than 140,000 new cases today, the latest all-time high",False,False,False,False
+20210611,Washington Post,"McDonald’s suffers data breach in U.S., Taiwan and South Korea",Yes,McDonald's,True,True
+20211222,The Guardian,South Africa  Data appears to support claims that Omicron is less severe in country,False,False,False,False
+20170206,The Guardian,Air pollution  Europe escalates action against UK for breaching limits,False,False,False,False
+20130627,CNN,NSA leaker waits in Moscow,False,False,False,False
+20161215,The Guardian,Twitter blocks government 'spy centers' from accessing user data,True,Government,False,False
+20171018,The Guardian,Why the hacker drama might need a restart,False,False,False,False
+20170926,Daily Mail,Pepper X set to break record for world's hottest pepper with 3.18 MILLION Scoville heat units,False,False,False,False
+20180606,Daily Mail,"Facebook gave access to personal data about its users to Huawei, a Chinese electronics firm flagged by US intelligence as a 'national security threat'",True,Facebook,False,False
+20170104,FOX,FAKE CYBER WAR'? 'Guccifer' casts doubt on White House's Russian hacking claims,False,False,False,False
+20130528,New York Times,Data Helps Propel Markets,True,False,False,False
+20121015,BBC,Skydiver smashes YouTube record,False,False,False,False
+20100131,Washington Post,Russia's Novaya Gazeta Web site hacked,True,Novaya Gazeta,False,False
+20200817,CNBC,"Stock market live Monday: S&P 500 still shy of record close, Tesla hits new high, gold best day...",False,Tesla,False,False
+20191101,New York Times,"U.S. Added 128,000 Jobs in October; Here’s What the Numbers MeanIt’s a slowdown, but the data is clouded by the temporary impact of a strike at General Motors, which shaved close to 50,000 workers from the employment rolls.",False,General Motors,False,False
+20210404,BBC,State of emergency over Florida toxic water leak,True,Florida,False,False
+20120423,CNBC,Aussie at 2-Week Low as Inflation Data Opens Door to Rate Cut,False,False,False,False
+20110930,New York Times,The Texas Tribune: Few Bright Spots in Perry’s Health Care Record,False,False,False,False
+20210630,CNBC,S&P 500 closes at record high to close out a strong first half of 2021,False,False,False,False
+20111031,New York Times,Congressional Voting Records Show Few With Perfect Attendance,False,False,False,False
+20170605,New York Times,"10,000 New Yorkers. 2 Decades. A Data Trove.",True,False,False,False
+20160708,USA Today,"Brexit blues gone: S&P 500 near record, Dow up 251",False,False,False,False
+20220928,Washington Post,7:36 p.m.Fort Myers sees record storm surge,False,False,False,False
+20141221,New York Times,"Rock Scully, Grateful Dead’s Manager Who Put the Band on Records, Dies at 73 NYT Now",False,True,False,False
+20191001,Daily Mail,The UK records its first case of 'Brexit psychosis': Father tried to burrow out of hospital with his bare hands after he was sectioned and tranquilized when vote to leave the EU left him feeling 'paranoid and ashamed to be British',False,False,False,False
+20170914,Daily Mail,EXCLUSIVE - Irma causes high water in Lowcountry: Charleston's most exclusive neighborhoods breathe a sigh of relief after surviving record-setting hurricane with minimal flooding,False,False,False,False
+20180502,The Guardian,Company posts record $710m net loss as it struggles to produce Model 3 cars,False,Tesla,False,False
+20121105,FOX,NBC sites hacked by so-called 'pyknic'; quickly restored ...,True,NBC,False,False
+20180716,CNBC,JP Morgan posts record second-quarter profit on unexpected jump in trading revenue,False,JP Morgan,False,False
+20161229,FOX,"MALICIOUS ACTIVITIES': US imposes sanctions against Russia for election hacking, expels 35 operatives",True,Government,False,False
+20120620,CNN,Obama leak 'scandal' is overblown,False,Government,False,False
+20220902,CNBC,"Trump pick in Michigan secretary of state race threatened to kill her family, court records claim",False,False,False,False
+20151126,The Guardian,Technology  Hackers can hijack Wi-Fi Hello Barbie to spy on your children,True,Hello Barbie,False,False
+20170608,Daily Mail,"Release all the tapes – I'm good with it!' Comey dares Trump to release recordings of their talks to corroborate his notes as he tells senators: 'Lordy, I hope there are tapes!'",False,False,False,False
+20220831,Daily Mail,Republicans plan PREBUTTAL to Biden's 'Soul of the Nation' speech: GOP leader Kevin McCarthy will take on Democrats' record on crime and inflation before President's Independence Hall address,False,False,False,False
+20150709,The Guardian,"Help, I've been hacked – have I lost all my files?",True,False,False,False
+20160418,The Guardian,"Your phone number is all a hacker needs to read texts, listen to calls and track you",True,False,False,False
+20150816,New York Post,AT&T let NSA have ‘live’ access to US cellphone records: report,True,AT&T,False,False
+20170526,New York Post,How Team Obama tried to hack the election,False,False,False,False
+20160229,FOX,UN chief claims Syria cease-fire is holding despite growing breaches,True,False,False,False
+20150517,The Guardian,Ben Affleck's slave-owning family  Records sketch a conflicted past,True,False,False,False
+20150101,New York Times,Murders Drop to a Record Low in New York City,False,False,False,False
+20200730,New York Post,Amazon posts record profits as coronavirus keeps shoppers glued,False,Amazon,False,False
+20140101,CNN,See record-setting fireworks show,False,False,False,False
+20221005,New York Post,How to get tickets for Yankees games after Aaron Judge's home run record,False,False,False,False
+20100501,New York Times,The Data-Driven Life,False,Google,False,False
+20150127,Washington Post,"TSA intercepted a record number of guns, plus these bizarre items, in 2014",False,False,False,False
+20150601,USA Today,Requirements for digital medical records,False,False,False,False
+20160222,FOX,Top OPM official  steps down amid pressure following massive data breaches,Yes,Government,True,True
+20131025,New York Post,"Urbanbaby blog hacked with porn, spam",True,Urbanbaby,False,False
+20150227,FOX,"Hackers force State Department to replace 300,000 credentials",Yes,State Department,True,True
+20191202,USA Today,"Who is Ozuna, the record-setting Latin music star?",False,False,False,False
+20191202,Washington Post,‘The ghost of Sally Hemings’: A stubborn leak haunts tribute to Jefferson’s architectural genius,False,False,False,False
+20150504,Daily Mail,The 'alien sounds' captured 22 MILES above Earth: Nasa recording from the edge of space has unexplained hisses and whistles,False,False,False,False
+20170519,New York Times,Victims Call Hackers’ Bluff as Ransomware Deadline Nears,False,False,False,False
+20160105,Washington Post,"Hackers caused a blackout for the first time, researchers say",True,False,False,False
+20190714,The Guardian,Hamilton wins British Grand Prix for record sixth time,False,False,False,False
+20140505,CNN,Target CEO during data hack quits,Yes,Target,True,True
+20071009,Washington Post,Officials to Probe Leak of Bin Laden Video,True,False,False,False
+20130925,Daily Mail,I was hacked': Former deputy mayor of London does a Weiner and posts naked pictures on his Facebook account,True,Facebook,False,False
+20170509,FOX,The Wendy’s chicken-nugget boy beat Ellen’s Twitter record and finally got free nuggets,False,Wendy's,False,False
+20190626,CNBC,"Leaked Wayfair receipt shows 1,600 mattresses and 100 bunk beds destined for detention camp for kids",True,Wayfair,True,True
+20220325,Daily Mail,Leaked email reveals Applebee's exec said skyrocketing gas prices and inflation are an 'advantage' that can be used to LOWER wages for workers who already live paycheck to paycheck because they expect more people to apply for work,False,Applebee's,False,False
+20170218,CNN,The Presidential Records Act and @realdonaldtrump,False,False,False,False
+20161007,New York Post,US officials 'confident' Russians hacked DNC         :0,,,True,True
+20190517,The Guardian,Job offers 'shunned by top talent after data scandal',True,Facebook,False,False
+20130726,Daily Mail,How the NSA's two new spying facilities storing your data is SEVEN TIMES the size of the Pentagon,True,Government,False,False
+20200303,CNBC,Stocks in Asia set to slip as Wall Street tumbles despite Fed rate cut; Australia's GDP data ahead,False,False,False,False
+20160802,New York Times,3 Top D.N.C. Officials Leave in Wake of Email Breach,True,Government,True,True
+20180407,FOX,"7-year-old girl hikes Mount Kilimanjaro in honor of late dad, breaks record",False,False,False,False
+20160817,Washington Post,AT&T’s new data plans trade one overage penalty for another,False,AT&T,False,False
+20140531,Daily Mail,Jaques Costeau grandson aims to break his famed grandfather's record with 31-day undersea voyage,False,False,False,False
+20110814,Daily Mail,They've cleaned up! Scores showering together on the beach in Bournemouth break world record,False,False,False,False

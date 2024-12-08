@@ -4,6 +4,7 @@ data/headlines.csv
 data/companies.csv
 
 process_result/join_companies_to_article copy.ipynb
+data/analysis/articles_with_company_name.csv
 
 chromadb/*
 
