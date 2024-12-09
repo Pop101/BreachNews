@@ -8,6 +8,7 @@ data/analysis/articles_with_company_name.csv
 data/analysis/joined_articles_companies.csv
 data/article_data/sorted_companies.csv
 data/distribution_differences/articles_about_companies_joined_companies.csv
+data/companies_sorted.csv
 
 chromadb/*
 
