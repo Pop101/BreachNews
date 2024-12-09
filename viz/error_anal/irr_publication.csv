@@ -1,0 +1,11 @@
+Publication,Company F1,Company Accuracy,Breach F1,Breach Accuracy,Sample Size
+The Guardian,0.50,0.79,0.36,0.76,29
+Washington Post,0.73,0.79,0.40,0.69,29
+New York Times,0.60,0.83,0.29,0.78,23
+CNBC,0.62,0.79,0.67,0.96,28
+Daily Mail,0.84,0.88,0.44,0.80,25
+BBC,0.67,0.88,0.00,0.75,8
+New York Post,0.67,0.69,0.40,0.77,13
+CNN,0.29,0.55,1.00,1.00,11
+USA Today,0.33,0.71,0.67,0.93,14
+FOX,0.67,0.80,0.40,0.70,20

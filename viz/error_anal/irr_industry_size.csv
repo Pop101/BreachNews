@@ -1,0 +1,190 @@
+Industry,Size,Company F1,Company Accuracy,Breach F1,Breach Accuracy,Sample Size
+"medical devices",small,N/A,N/A,N/A,N/A,0
+"medical devices",medium,0.89,0.80,0.80,0.80,5
+"medical devices",large,N/A,N/A,N/A,N/A,0
+"telecommunications",small,1.00,1.00,0.00,1.00,1
+"telecommunications",medium,0.68,0.52,0.44,0.60,25
+"telecommunications",large,1.00,1.00,0.00,0.88,8
+"information technology and services",small,1.00,1.00,0.89,0.90,10
+"information technology and services",medium,1.00,1.00,0.00,1.00,3
+"information technology and services",large,0.80,0.67,0.00,1.00,3
+"import and export",small,N/A,N/A,N/A,N/A,0
+"import and export",medium,N/A,N/A,N/A,N/A,0
+"import and export",large,1.00,1.00,0.00,0.67,3
+"entertainment",small,N/A,N/A,N/A,N/A,0
+"entertainment",medium,1.00,1.00,1.00,1.00,1
+"entertainment",large,1.00,1.00,1.00,1.00,2
+"marketing and advertising",small,0.64,0.47,0.78,0.72,32
+"marketing and advertising",medium,0.50,0.33,1.00,1.00,6
+"marketing and advertising",large,0.50,0.33,1.00,1.00,6
+"retail",small,0.75,0.60,0.89,0.80,5
+"retail",medium,N/A,N/A,N/A,N/A,0
+"retail",large,0.67,0.50,1.00,1.00,2
+"executive office",small,0.67,0.50,1.00,1.00,2
+"executive office",medium,N/A,N/A,N/A,N/A,0
+"executive office",large,N/A,N/A,N/A,N/A,0
+"computer software",small,1.00,1.00,1.00,1.00,4
+"computer software",medium,0.91,0.83,1.00,1.00,6
+"computer software",large,1.00,1.00,1.00,1.00,3
+"higher education",small,N/A,N/A,N/A,N/A,0
+"higher education",medium,N/A,N/A,N/A,N/A,0
+"higher education",large,0.67,0.50,1.00,1.00,2
+"printing",small,N/A,N/A,N/A,N/A,0
+"printing",medium,0.67,0.50,1.00,1.00,2
+"printing",large,N/A,N/A,N/A,N/A,0
+"government relations",small,N/A,N/A,N/A,N/A,0
+"government relations",medium,N/A,N/A,N/A,N/A,0
+"government relations",large,0.52,0.35,0.31,0.47,17
+"transportation/trucking/railroad",small,N/A,N/A,N/A,N/A,0
+"transportation/trucking/railroad",medium,0.52,0.35,0.31,0.47,17
+"transportation/trucking/railroad",large,N/A,N/A,N/A,N/A,0
+"research",small,0.67,0.50,0.00,1.00,2
+"research",medium,1.00,1.00,0.00,1.00,1
+"research",large,0.52,0.35,0.31,0.47,17
+"management consulting",small,1.00,1.00,1.00,1.00,5
+"management consulting",medium,1.00,1.00,0.00,1.00,1
+"management consulting",large,N/A,N/A,N/A,N/A,0
+"insurance",small,N/A,N/A,N/A,N/A,0
+"insurance",medium,1.00,1.00,0.00,1.00,1
+"insurance",large,1.00,1.00,0.00,1.00,1
+"venture capital & private equity",small,N/A,N/A,N/A,N/A,0
+"venture capital & private equity",medium,0.00,0.00,1.00,1.00,2
+"venture capital & private equity",large,1.00,1.00,0.00,1.00,1
+"electrical/electronic manufacturing",small,1.00,1.00,0.00,1.00,1
+"electrical/electronic manufacturing",medium,N/A,N/A,N/A,N/A,0
+"electrical/electronic manufacturing",large,1.00,1.00,0.00,1.00,1
+"staffing and recruiting",small,N/A,N/A,N/A,N/A,0
+"staffing and recruiting",medium,N/A,N/A,N/A,N/A,0
+"staffing and recruiting",large,1.00,1.00,0.00,1.00,1
+"market research",small,1.00,1.00,1.00,1.00,1
+"market research",medium,N/A,N/A,N/A,N/A,0
+"market research",large,1.00,1.00,0.00,1.00,1
+"renewables & environment",small,0.80,0.67,0.00,1.00,3
+"renewables & environment",medium,0.67,0.50,0.00,1.00,2
+"renewables & environment",large,N/A,N/A,N/A,N/A,0
+"computer & network security",small,1.00,1.00,0.00,1.00,1
+"computer & network security",medium,N/A,N/A,N/A,N/A,0
+"computer & network security",large,N/A,N/A,N/A,N/A,0
+"fine art",small,0.00,0.00,0.00,1.00,1
+"fine art",medium,N/A,N/A,N/A,N/A,0
+"fine art",large,N/A,N/A,N/A,N/A,0
+"philanthropy",small,0.00,0.00,0.00,1.00,1
+"philanthropy",medium,N/A,N/A,N/A,N/A,0
+"philanthropy",large,N/A,N/A,N/A,N/A,0
+"food production",small,0.00,0.00,0.00,1.00,1
+"food production",medium,N/A,N/A,N/A,N/A,0
+"food production",large,N/A,N/A,N/A,N/A,0
+"online media",small,0.00,0.00,0.00,1.00,1
+"online media",medium,N/A,N/A,N/A,N/A,0
+"online media",large,N/A,N/A,N/A,N/A,0
+"broadcast media",small,N/A,N/A,N/A,N/A,0
+"broadcast media",medium,0.00,0.00,0.00,1.00,1
+"broadcast media",large,0.00,0.00,0.00,1.00,1
+"apparel & fashion",small,0.40,0.25,1.00,1.00,4
+"apparel & fashion",medium,N/A,N/A,N/A,N/A,0
+"apparel & fashion",large,N/A,N/A,N/A,N/A,0
+"fund-raising",small,0.00,0.00,0.00,1.00,1
+"fund-raising",medium,N/A,N/A,N/A,N/A,0
+"fund-raising",large,N/A,N/A,N/A,N/A,0
+"health, wellness and fitness",small,0.00,0.00,0.00,1.00,1
+"health, wellness and fitness",medium,N/A,N/A,N/A,N/A,0
+"health, wellness and fitness",large,N/A,N/A,N/A,N/A,0
+"professional training & coaching",small,0.00,0.00,0.00,1.00,1
+"professional training & coaching",medium,1.00,1.00,0.00,1.00,1
+"professional training & coaching",large,N/A,N/A,N/A,N/A,0
+"airlines/aviation",small,1.00,1.00,1.00,1.00,2
+"airlines/aviation",medium,N/A,N/A,N/A,N/A,0
+"airlines/aviation",large,N/A,N/A,N/A,N/A,0
+"computer games",small,0.67,0.50,0.00,1.00,2
+"computer games",medium,1.00,1.00,1.00,1.00,2
+"computer games",large,N/A,N/A,N/A,N/A,0
+"banking",small,1.00,1.00,0.00,1.00,1
+"banking",medium,N/A,N/A,N/A,N/A,0
+"banking",large,N/A,N/A,N/A,N/A,0
+"financial services",small,1.00,1.00,1.00,1.00,2
+"financial services",medium,0.00,0.00,0.00,1.00,1
+"financial services",large,0.67,0.50,0.00,1.00,4
+"industrial automation",small,1.00,1.00,0.00,1.00,1
+"industrial automation",medium,N/A,N/A,N/A,N/A,0
+"industrial automation",large,N/A,N/A,N/A,N/A,0
+"consumer electronics",small,N/A,N/A,N/A,N/A,0
+"consumer electronics",medium,N/A,N/A,N/A,N/A,0
+"consumer electronics",large,1.00,1.00,0.00,1.00,2
+"consumer goods",small,N/A,N/A,N/A,N/A,0
+"consumer goods",medium,1.00,1.00,1.00,1.00,2
+"consumer goods",large,N/A,N/A,N/A,N/A,0
+"business supplies and equipment",small,0.80,0.67,0.00,1.00,3
+"business supplies and equipment",medium,1.00,1.00,0.00,1.00,1
+"business supplies and equipment",large,N/A,N/A,N/A,N/A,0
+"internet",small,0.80,0.67,0.00,1.00,3
+"internet",medium,N/A,N/A,N/A,N/A,0
+"internet",large,0.89,0.80,0.50,0.60,10
+"non-profit organization management",small,N/A,N/A,N/A,N/A,0
+"non-profit organization management",medium,0.67,0.50,0.00,1.00,4
+"non-profit organization management",large,0.80,0.67,1.00,1.00,3
+"writing and editing",small,1.00,1.00,0.67,0.50,2
+"writing and editing",medium,N/A,N/A,N/A,N/A,0
+"writing and editing",large,N/A,N/A,N/A,N/A,0
+"food & beverages",small,1.00,1.00,1.00,1.00,2
+"food & beverages",medium,N/A,N/A,N/A,N/A,0
+"food & beverages",large,N/A,N/A,N/A,N/A,0
+"sports",small,N/A,N/A,N/A,N/A,0
+"sports",medium,N/A,N/A,N/A,N/A,0
+"sports",large,1.00,1.00,0.00,1.00,2
+"accounting",small,0.67,0.50,0.00,1.00,2
+"accounting",medium,N/A,N/A,N/A,N/A,0
+"accounting",large,1.00,1.00,1.00,1.00,1
+"consumer services",small,0.67,0.50,0.00,1.00,2
+"consumer services",medium,N/A,N/A,N/A,N/A,0
+"consumer services",large,N/A,N/A,N/A,N/A,0
+"chemicals",small,N/A,N/A,N/A,N/A,0
+"chemicals",medium,N/A,N/A,N/A,N/A,0
+"chemicals",large,0.89,0.80,0.00,0.20,5
+"cosmetics",small,0.89,0.80,0.00,0.20,5
+"cosmetics",medium,N/A,N/A,N/A,N/A,0
+"cosmetics",large,N/A,N/A,N/A,N/A,0
+"law enforcement",small,N/A,N/A,N/A,N/A,0
+"law enforcement",medium,0.00,0.00,0.00,0.00,1
+"law enforcement",large,0.00,0.00,0.00,0.00,1
+"restaurants",small,N/A,N/A,N/A,N/A,0
+"restaurants",medium,1.00,1.00,1.00,1.00,2
+"restaurants",large,1.00,1.00,1.00,1.00,3
+"newspapers",small,N/A,N/A,N/A,N/A,0
+"newspapers",medium,1.00,1.00,0.00,0.00,1
+"newspapers",large,N/A,N/A,N/A,N/A,0
+"automotive",small,N/A,N/A,N/A,N/A,0
+"automotive",medium,N/A,N/A,N/A,N/A,0
+"automotive",large,0.80,0.67,0.00,1.00,3
+"arts and crafts",small,0.67,0.50,0.00,1.00,2
+"arts and crafts",medium,N/A,N/A,N/A,N/A,0
+"arts and crafts",large,N/A,N/A,N/A,N/A,0
+"investment management",small,0.67,0.50,0.00,1.00,2
+"investment management",medium,N/A,N/A,N/A,N/A,0
+"investment management",large,N/A,N/A,N/A,N/A,0
+"oil & energy",small,1.00,1.00,0.00,1.00,1
+"oil & energy",medium,N/A,N/A,N/A,N/A,0
+"oil & energy",large,N/A,N/A,N/A,N/A,0
+"railroad manufacture",small,1.00,1.00,0.00,1.00,1
+"railroad manufacture",medium,N/A,N/A,N/A,N/A,0
+"railroad manufacture",large,N/A,N/A,N/A,N/A,0
+"events services",small,0.00,0.00,0.00,0.00,1
+"events services",medium,N/A,N/A,N/A,N/A,0
+"events services",large,N/A,N/A,N/A,N/A,0
+"construction",small,1.00,1.00,0.00,0.00,1
+"construction",medium,N/A,N/A,N/A,N/A,0
+"construction",large,N/A,N/A,N/A,N/A,0
+"leisure, travel & tourism",small,N/A,N/A,N/A,N/A,0
+"leisure, travel & tourism",medium,1.00,1.00,0.00,1.00,1
+"leisure, travel & tourism",large,N/A,N/A,N/A,N/A,0
+"warehousing",small,N/A,N/A,N/A,N/A,0
+"warehousing",medium,N/A,N/A,N/A,N/A,0
+"warehousing",large,1.00,1.00,0.00,1.00,1
+"wholesale",small,N/A,N/A,N/A,N/A,0
+"wholesale",medium,1.00,1.00,0.00,1.00,1
+"wholesale",large,N/A,N/A,N/A,N/A,0
+"computer networking",small,N/A,N/A,N/A,N/A,0
+"computer networking",medium,N/A,N/A,N/A,N/A,0
+"computer networking",large,1.00,1.00,0.00,0.00,1
+"religious institutions",small,1.00,1.00,0.00,1.00,1
+"religious institutions",medium,N/A,N/A,N/A,N/A,0
+"religious institutions",large,N/A,N/A,N/A,N/A,0
